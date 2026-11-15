@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e9edf2;
+  color: #333;
+  line-height: 1.6;
+  padding: 30px 15px;
+}
+
+.cv {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Titre */
+.entete {
+  text-align: center;
+  background: #1f3a5f;
+  color: #fff;
+  padding: 25px 20px;
+  margin: -40px -40px 30px;
+}
+
+.entete h1 {
+  font-size: 30px;
+}
+
+.titre {
+  font-size: 16px;
+  color: #b8c7dc;
+  margin-top: 4px;
+}
+
+.contact {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #1f3a5f;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-bottom: 2px solid #1f3a5f;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+.item {
+  margin-bottom: 14px;
+}
+
+.ligne {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.item h3 {
+  font-size: 16px;
+}
+
+.date {
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* Compétences en pastilles */
+.competences {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.competences li {
+  background: #e9edf2;
+  color: #1f3a5f;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+/* Téléphone */
+@media (max-width: 600px) {
+  .cv {
+    padding: 20px;
+  }
+  .entete {
+    margin: -20px -20px 25px;
+  }
+  .ligne {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* Impression / PDF */
+@media print {
+  body {
+    background: #fff;
+    padding: 0;
+  }
+  .cv {
+    box-shadow: none;
+  }
+}
